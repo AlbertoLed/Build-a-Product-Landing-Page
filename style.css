@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700;900&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+/* 
+    \\RESET 
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*
+    \\VARIABLES 
+*/
+:root {
+    --BLACK: #010101;
+    --WHITE-DARKER: #f7f7f7;
+    --WHITE: #ffffff;
+}
+
+
+/* 
+    \\GENERAL STYLES
+*/
+html {
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+}
+
+
+/*
+    \\STANDALONE RULES
+*/
+#header, #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header {
+    background-color: var(--BLACK);
+    color: var(--WHITE-DARKER);
+    padding-top: 100px;
+    width: 100%;
+}
+#nav-bar {
+    width: 100%;
+    padding: 8px 5%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--BLACK);
+}
+.nav-link, .nav-link:visited, #gamakay-link {
+    color: var(--WHITE-DARKER);
+    text-decoration: none;
+}
+.nav-link {
+    margin: 0 10px;
+    font-weight: 700;
+
+}
+#gamakay-link {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.1rem;
+    flex-grow: 1;
+}
+.nav-link:last-of-type {
+    border: 1px solid var(--WHITE-DARKER);
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+#header-title {
+    text-transform: uppercase;
+    font-size: 3.3rem;
+    font-weight: 900;
+    letter-spacing: .1rem;
+
+    /* overflow: hidden; */
+    /* background: var(--BLACK); */
+    position: relative;
+}
+/* - Title animation*/
+@keyframes colorAnimation {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 700%;
+    }
+}
+.color-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        #e54cff,
+        #ffc561,
+        #ffffff,
+        #00c2ff,
+        #ffc640,
+        #ffffff,
+        #e54cff,
+        #33ffff,
+        #33ff8c,
+        #00c2ff,
+        #ffc640,
+        #33ff8c,
+        #ffffff,
+        #835ee0,
+        #e54cff
+    );
+    background-size: 1000%;
+    mix-blend-mode: darken;
+    animation: colorAnimation 90s linear infinite;
+}
+
+
+#header-img {
+    width: 90%;
+    max-width: 1200px;
+}
+
+#main {
+    background-color: var(--WHITE-DARKER);
+}
+.subtitle {
+    color: var(--BLACK);
+    font-size: 3rem;
+    text-align: center;
+
+}
+#subtitle-1 {
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
+.subtitle-list {
+    font-size: 1.4rem;
+    text-align: center;
+    list-style: none;
+}
+#features {
+    width: 90%;
+    max-width: 1080px;
+}
+.features-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--WHITE);
+    color: var(--BLACK);
+    padding: 80px;
+    margin: 80px 0;
+    border-radius: 10px;
+    column-gap: 8%;
+    align-items: center;
+
+}
+.features-item:nth-of-type(2n) .features-img{
+    order: -1;
+}
+.features-item:last-of-type {
+    margin-bottom: 0;
+}
+.features-title {
+    font-size: 2.3rem;
+    line-height: 1.1;
+}
+.features-paragraph {
+    font-size: 1.2rem;
+}
+.features-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    justify-self: center;
+    border-radius: 10px;
+}
+#subtitle-2, #subtitle-3 {
+    margin-bottom: 25px;
+}
+#overview {
+    padding-top: 80px;
+}
+.footer {
+    background-color: var(--BLACK);
+    width: 100%;
+}
+#buy {
+    margin-top: 80px;
+    padding: 40px;
+
+}
+#btn-buy {
+    background-color: var(--WHITE-DARKER);
+    color: var(--BLACK);
+    border: none;
+    padding: 10px;
+    width: 120px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+#subtitle-3 {
+    color: var(--WHITE-DARKER);
+}
+#sub-paragraph {
+    color: var(--WHITE-DARKER);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#email {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+#submit {
+    font-size: 1.1rem;
+}
+#email, #submit {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
