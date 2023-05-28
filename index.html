@@ -9,7 +9,7 @@
   content="default-src 'self'; img-src https://*; child-src 'none';" /> -->
 
     <link rel="stylesheet" href="style.css">
-    <title>Gamekay tk75</title>
+    <title>Gamakay tk75</title>
 </head>
 <body>
     <header id="header">
@@ -17,7 +17,7 @@
             <a id="gamakay-link" href="https://gamakay.com/" target="_blank">Gamakay</a>
             <a class="nav-link" href="#features">Features</a>
             <a class="nav-link" href="#overview">Overview</a>
-            <a class="nav-link" href="#buy">Get One</a>
+            <a class="nav-link nav-link-buy" href="#buy">Get One</a>
         </nav>
             <h1 id="header-title">Gamakay tk75
                 <div class="color-animation"></div>
@@ -79,9 +79,9 @@
         <section id="overview">
             <h2 id="subtitle-2" class="subtitle">Take a look</h2>
             <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/ENODhDsEc2A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="switches">
-                <h3>What’s in the box</h3>
-                <ul>
+            <div class="keyboard-box">
+                <h3 class="keyboard-box__title">What’s in the box</h3>
+                <ul class="keyboard-box__list">
                     <li>1 * Gamakay TK75 75% keyboard
                         </li>
                     <li>1 * Type C cable</li>
@@ -89,22 +89,19 @@
                     <li>1 * Keycap Puller</li>
                     <li>5 Pcs PBT Cherry Profile Double Layer Keycaps</li>
                 </ul>
-                
             </div>
         </section>
         <section id="buy" class="footer">
-            <button id="btn-buy">Buy</button>
+            <button id="btn-buy" class="buyBtnAnimation">Buy</button>
         </section>
         <section id="newsletter" class="footer">
             <h2 id="subtitle-3" class="subtitle">Want to know more?</h3>
             <p id="sub-paragraph">Subscribe to receive our offers and the latest news.</p>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <input id="email" name="email" type="email" placeholder="example@email.com">
-                <input id="submit" type="submit">
+                <input id="submit" type="submit" value="Subscribe">
             </form>
         </section>
-        
-
     </main>
 </body>
 </html>
