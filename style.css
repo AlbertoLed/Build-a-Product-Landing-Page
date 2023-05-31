@@ -421,7 +421,6 @@ html {
         visibility: visible;
     }
     .nav-link:nth-of-type(2), .nav-link:nth-of-type(3) {
-        /* visibility: collapse; */
         display: none;
         
     }
